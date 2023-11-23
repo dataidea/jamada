@@ -1,0 +1,660 @@
+{% extends 'base.html' %} {% load static %}
+<!--Page Title -->
+{% block title %}
+<title>Home</title>
+{% endblock title%}
+<!-- Page Content -->
+{% block content %}
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container-fluid" data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div
+        class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
+      >
+        <h1>Welcome to the website of Professor Jamada</h1>
+        <h2>
+          Africa's leading traditional herbalist and spritual healer based in
+          Durban South Africa
+        </h2>
+        <div>
+          <a href="#contact" class="btn-get-started scrollto">Get in Touch</a>
+        </div>
+      </div>
+      <div
+        class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img"
+        data-aos="zoom-in"
+        data-aos-delay="150"
+      >
+        <img
+          src="{% static '/img/profile.jpeg' %}"
+          class="img-fluid animated rounded"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+<main id="main">
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>
+          Data Idea's services demonstrate its commitment to providing
+          comprehensive data solutions, from research and analysis to software
+          development and education.
+        </p>
+      </div>
+
+      <div class="row gy-4">
+        <div
+          class="col-lg-4 col-md-6 d-flex align-items-stretch"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <div class="icon-box iconbox-blue">
+            <div class="icon">
+              <svg
+                width="100"
+                height="100"
+                viewBox="0 0 600 600"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke="none"
+                  stroke-width="0"
+                  fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"
+                ></path>
+              </svg>
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <h4><a href="">Software Development</a></h4>
+            <p>
+              Data Idea provides software development services, catering to web,
+              mobile, and desktop app development requirements.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 col-md-6 d-flex align-items-stretch"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div class="icon-box iconbox-orange">
+            <div class="icon">
+              <svg
+                width="100"
+                height="100"
+                viewBox="0 0 600 600"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke="none"
+                  stroke-width="0"
+                  fill="#f5f5f5"
+                  d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"
+                ></path>
+              </svg>
+              <i class="bi bi-building"></i>
+            </div>
+            <h4><a href="">ML Model and Systems Development</a></h4>
+            <p>
+              The Data Idea team leverages ML algorithms and techniques to build
+              predictive models, automate processes, and improve
+              decision-making.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 col-md-6 d-flex align-items-stretch"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <div class="icon-box iconbox-yellow">
+            <div class="icon">
+              <svg
+                width="100"
+                height="100"
+                viewBox="0 0 600 600"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke="none"
+                  stroke-width="0"
+                  fill="#f5f5f5"
+                  d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"
+                ></path>
+              </svg>
+              <i class="bi bi-pencil-fill"></i>
+            </div>
+            <h4><a href="">Free Learning Courses and Materials</a></h4>
+            <p>
+              Data Idea is committed to knowledge sharing and offers free
+              learning courses and materials to empower individuals and
+              organizations in the field of data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Services Section -->
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container">
+      <div class="row counters">
+        <div class="col-lg-3 col-6 text-center">
+          <span
+            data-purecounter-start="0"
+            data-purecounter-end="21"
+            data-purecounter-duration="1"
+            class="purecounter"
+          ></span>
+          <p>Clients</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span
+            data-purecounter-start="0"
+            data-purecounter-end="32"
+            data-purecounter-duration="1"
+            class="purecounter"
+          ></span>
+          <p>Projects</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span
+            data-purecounter-start="0"
+            data-purecounter-end="1463"
+            data-purecounter-duration="1"
+            class="purecounter"
+          ></span>
+          <p>Hours Of Support</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span
+            data-purecounter-start="0"
+            data-purecounter-end="5"
+            data-purecounter-duration="1"
+            class="purecounter"
+          ></span>
+          <p>Hard Workers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Counts Section -->
+
+  <section class="inner-page" style="padding: 0;" >
+    <!-- Popular Courser -->
+      <div id="pricing" class="pricing section-bg">
+        <div class="container p-3" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Popular Blogs</h2>
+            <p>
+              Explore our works, and experiences of our clients in our blogs
+            </p>
+          </div>
+    
+   
+          <div class="row">
+            {% if blogs %}
+            {% for blog in blogs %}
+            <div class="col-lg-3 col-md-6 mt-5" data-aos="fade-up" data-aos-delay="100">
+              <!-- <div class=""> -->
+                <a href="{% url 'blog:blog_details'%}?slug={{blog.slug}}"
+                class="nav-link">
+                  <img src="{{blog.cover_image}}" 
+                  class="img-fluid rounded"
+                  alt="" />
+                  <h5 class="mt-3">{{ blog.title }}</h5>
+                </a>
+              <!-- </div> -->
+            </div>
+            {% endfor %}
+            <!-- Otherwise -->
+            {% else %}
+            <h5>No blogs found</h5>
+            {% endif %}
+          </div>
+        </div>
+  </section>
+
+  <!-- ======= Testimonials Section ======= -->
+  <section id="testimonials" class="testimonials section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Testimonials</h2>
+        <p>What our clients say</p>
+      </div>
+
+      <div
+        class="testimonials-slider swiper"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                We partnered with Dataidea company to develop our official
+                Website, and they delivered exceptional results. Their team
+                understood our requirements, translated them into innovative
+                solutions, and delivered a robust, user-friendly and
+                customizable web application. Their attention to detail, timely
+                delivery, and open communication made the entire process
+                seamless.
+              </p>
+              <h3>Mutebe Jamal</h3>
+              <h4>Ceo &amp; Founder Liame Designs</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                If you invest in your education and build your skills, you will
+                see major growth in your career. Just a few months after I've
+                began investing in myself, spending time learning from DATAIDEA
+                resources and my life is changing in a nice way.
+              </p>
+              <h3>Nalule Desire</h3>
+              <h4>Software Engineering Student</h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End Testimonials Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+
+  <section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>
+          Discover the impressive range of projects we have successfully
+          undertaken for our esteemed clients. Each project represents a unique
+          challenge that we tackled with precision and innovation.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-software">Software</li>
+            <li data-filter=".filter-ai">Ai</li>
+            <li data-filter=".filter-course">Courses</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+          <a
+            href="https://mind.dataidea.org/"
+            target="_blank"
+            title="More Details"
+          >
+            <div class="portfolio-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1617791160536-598cf32026fb"
+                class="img-fluid"
+                alt="MindAi"
+              />
+              <div class="portfolio-info">
+                <h4>MindAi</h4>
+                <p>Ai</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-software">
+          <a
+            href="https://liamedesigns.pythonanywhere.com/"
+            target="_blank"
+            title="More Details"
+          >
+            <div class="portfolio-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>LiameDesigns</h4>
+                <p>Software</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-course">
+          <a
+            href="https://www.dataidea.org/school/course-details/4"
+            target="_blank"
+            title="More Details"
+          >
+            <div class="portfolio-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <p>Courses</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Portfolio Section -->
+
+  <!-- ======= Pricing Section ======= -->
+  <section id="pricing" class="pricing section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Pricing</h2>
+        <p>
+          At our company, we believe in providing transparent and competitive
+          pricing for our wide range of services. We understand that every
+          project is unique, and we strive to offer flexible pricing options
+          that cater to your specific needs and budget.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="box">
+            <h3>Learning Materials</h3>
+            <h4><sup>$</sup>0<span> / month</span></h4>
+            <ul>
+              <li>Videos</li>
+              <li>Web Templates</li>
+              <li>Collab Notebooks</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="https://www.dataidea.org/school/" class="btn-buy"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-3 col-md-6 mt-4 mt-md-0"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="box featured">
+            <h3>Web Templates</h3>
+            <h4><sup>$</sup>3<span> / once</span></h4>
+            <ul>
+              <li>3 months technical support</li>
+              <li>Life time free updates</li>
+              <li>100% money back guarantee</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#contact" class="btn-buy">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-3 col-md-6 mt-4 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="box">
+            <h3>Website Development</h3>
+            <h4><sup>$</sup>135 - 785<span> / once</span></h4>
+            <ul>
+              <li>Up to 1 year technical support</li>
+              <li>Up to 1 year free updates</li>
+              <li>100% 7 days money back guarantee</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#contact" class="btn-buy">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-3 col-md-6 mt-4 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div class="box">
+            <span class="advanced">Custom</span>
+            <h3>ML Model and Systems Development</h3>
+            <h4><sup>$</sup>~<span> / month</span></h4>
+            <ul>
+              <li>Data Analysis and Visualization</li>
+              <li>Model Development and Deployment</li>
+              <li>Model Integration into System</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#contact" class="btn-buy">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing Section -->
+
+  <!-- ======= Frequently Asked Questions Section ======= -->
+  <section id="faq" class="faq">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>
+          We understand that you may have some questions about our company and
+          the services we offer. Here are answers to some of the frequently
+          asked questions to provide you with more information.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <ul>
+          <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-info icon-help"></i>
+            <a
+              data-bs-toggle="collapse"
+              class="collapse"
+              data-bs-target="#faq-list-1"
+              >How can I contact your company?
+              <i class="bi bi-info icon-show"></i
+              ><i class="bx bx-chevron-up icon-close"></i
+            ></a>
+            <div
+              id="faq-list-1"
+              class="collapse show"
+              data-bs-parent=".faq-list"
+            >
+              <p>
+                You can contact our company by filling out the contact form on
+                our website, sending us an email at [email protected], or
+                calling our customer support hotline at [phone number]. We are
+                available to answer any questions, discuss your project
+                requirements, or provide further information about our services.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-info icon-help"></i>
+            <a
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-list-2"
+              class="collapsed"
+              >What is software development for web, mobile, and desktop apps?
+              <i class="bx bx-chevron-down icon-show"></i
+              ><i class="bx bx-chevron-up icon-close"></i
+            ></a>
+            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Software development for web, mobile, and desktop apps involves
+                designing, building, and maintaining applications that run on
+                different platforms. This includes developing user interfaces,
+                implementing functionality, ensuring performance and security,
+                and providing a seamless user experience across devices.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-info icon-help"></i>
+            <a
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-list-3"
+              class="collapsed"
+              >What is machine learning (ML) model and systems development?
+              <i class="bx bx-chevron-down icon-show"></i
+              ><i class="bx bx-chevron-up icon-close"></i
+            ></a>
+            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Machine learning model and systems development involves
+                designing, training, and deploying algorithms and models that
+                can learn from data and make predictions or take actions. It
+                encompasses tasks such as data preprocessing, feature
+                engineering, model selection, optimization, and integration into
+                production systems.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- End Frequently Asked Questions Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>
+          Have a question or want to learn more about our services? We would
+          love to hear from you! Reach out to us using the contact information
+          provided below or fill out the form, and our team will get back to you
+          as soon as possible.
+        </p>
+      </div>
+
+      <div class="row">
+        <a href="#location" class="col-lg-6">
+          <div class="info-box mb-4">
+            <i class="bi bi-map"></i>
+            <h3>Our Address</h3>
+            <p>
+              UMF House 3rd Floor Plot 160, Sir Apollo Kagwa Rd, Kampala, Uganda
+            </p>
+          </div>
+        </a>
+
+        <a href="mailto:datasideaofficial@gmail" class="col-lg-3 col-md-6">
+          <div class="info-box mb-4">
+            <i class="bi bi-envelope"></i>
+            <h3>Email Us</h3>
+            <p>datasideaofficial.com</p>
+          </div>
+        </a>
+
+        <a href="tel:+256701520768" class="col-lg-3 col-md-6">
+          <div class="info-box mb-4">
+            <i class="bi bi-phone"></i>
+            <h3>Call Us</h3>
+            <p>+256 701 520 768</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7482428681355!2d32.56297169999999!3d0.3395869000000019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbbc4c655cf71%3A0x904a028e90ba9a2f!2sUMF%20Head%20Office!5e0!3m2!1sen!2sug!4v1685518436964!5m2!1sen!2sug"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            style="border: 0; width: 100%; height: 384px"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            id="location"
+          >
+          </iframe>
+        </div>
+
+        <div class="col-lg-6">
+          <form
+            action="{% url 'index:contact' %}"
+            method="post"
+            role="form"
+            class="php-email-form"
+          >
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <!-- Field -->
+                {{form.name}}
+                <!-- Field Error -->
+                <p class="text-danger">{{form.name.error}}</p>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <!-- Field -->
+                {{form.email}}
+                <!-- Field Error -->
+                <p class="text-danger">{{form.email.error}}</p>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <!-- Field -->
+              {{form.subject}}
+              <!-- Field Error -->
+              <p class="text-danger">{{form.subject.error}}</p>
+            </div>
+            <div class="form-group mt-3">
+              <!-- Field -->
+              {{form.message}}
+              <!-- Field Error -->
+              <p class="text-danger">{{form.message.error}}</p>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                Your message has been sent. Thank you!
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+</main>
+<!-- End #main -->
+{% endblock content %}
