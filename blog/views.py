@@ -9,7 +9,7 @@ def blog(request):
     context = {'blogs':blogs}
     return render(request, 'blog/blog.html', context)
 
-def blogDetail(request, blog_id):
+def blogDetails(request, blog_id):
     blog = get_object_or_404(Blog, pk=blog_id)
     all_blogs = Blog.objects.all()
     context = {'blog':blog,
