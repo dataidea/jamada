@@ -44,9 +44,9 @@
       <div id="pricing" class="pricing section-bg">
         <div class="container p-3" data-aos="fade-up">
           <div class="section-title">
-            <h2>Our Services</h2>
+            <h2>Services</h2>
             <p>
-              Explore our works, and experiences of our clients in our blogs
+              Explore the varity of services I offer to my clients in this section
             </p>
           </div>
     
@@ -56,14 +56,14 @@
             {% for service in services %}
             <div class="col-lg-3 col-md-6 mt-5" data-aos="fade-up" data-aos-delay="100">
               <!-- <div class=""> -->
-                <a href="{% url 'blog:blog_details'%}?slug={{blog.slug}}"
+                <div
                 class="nav-link">
                   <img src="{{service.thumb.url}}" 
                   class="img-fluid rounded"
                   alt="" />
                   <h5 class="mt-3">{{ service.title }}</h5>
                   <p>{{ service.description }}</p>
-                </a>
+              </div>
               <!-- </div> -->
             </div>
             {% endfor %}
@@ -83,7 +83,7 @@
         <div class="col-lg-3 col-6 text-center">
           <span
             data-purecounter-start="0"
-            data-purecounter-end="21"
+            data-purecounter-end="21322"
             data-purecounter-duration="1"
             class="purecounter"
           ></span>
@@ -93,31 +93,11 @@
         <div class="col-lg-3 col-6 text-center">
           <span
             data-purecounter-start="0"
-            data-purecounter-end="32"
+            data-purecounter-end="19031"
             data-purecounter-duration="1"
             class="purecounter"
           ></span>
-          <p>Projects</p>
-        </div>
-
-        <div class="col-lg-3 col-6 text-center">
-          <span
-            data-purecounter-start="0"
-            data-purecounter-end="1463"
-            data-purecounter-duration="1"
-            class="purecounter"
-          ></span>
-          <p>Hours Of Support</p>
-        </div>
-
-        <div class="col-lg-3 col-6 text-center">
-          <span
-            data-purecounter-start="0"
-            data-purecounter-end="5"
-            data-purecounter-duration="1"
-            class="purecounter"
-          ></span>
-          <p>Hard Workers</p>
+          <p>Success</p>
         </div>
       </div>
     </div>
@@ -141,7 +121,7 @@
             {% for blog in blogs %}
             <div class="col-lg-3 col-md-6 mt-5" data-aos="fade-up" data-aos-delay="100">
               <!-- <div class=""> -->
-                <a href="{% url 'blog:blog_details'%}?slug={{blog.slug}}"
+                <a href="{% url 'blog:blog_details' blog.id %}"
                 class="nav-link">
                   <img src="{{blog.thumb.url}}" 
                   class="img-fluid rounded"
@@ -178,29 +158,20 @@
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                We partnered with Dataidea company to develop our official
-                Website, and they delivered exceptional results. Their team
-                understood our requirements, translated them into innovative
-                solutions, and delivered a robust, user-friendly and
-                customizable web application. Their attention to detail, timely
-                delivery, and open communication made the entire process
-                seamless.
+                I am really satisfied with your services, and thank you for offering me a way out in my love life. At first, i thought that i had lost the love of my life forever. Thanks a lot"
               </p>
-              <h3>Mutebe Jamal</h3>
-              <h4>Ceo &amp; Founder Liame Designs</h4>
+              <h3>Mutebe Abdul</h3>
+              <h4>Uganda</h4>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                If you invest in your education and build your skills, you will
-                see major growth in your career. Just a few months after I've
-                began investing in myself, spending time learning from DATAIDEA
-                resources and my life is changing in a nice way.
+                t's been 7 years since a had promotion at work. Despite my heard work, I was always overlooked. I was very frustrated. However, a friend refereed me to Doctor Ali Cobra. I have never been happier. 3 Promotions in 1 year"
               </p>
               <h3>Nalule Desire</h3>
-              <h4>Software Engineering Student</h4>
+              <h4>Kenya</h4>
             </div>
           </div>
         </div>
@@ -300,14 +271,14 @@
         <a href="#location" class="col-lg-6">
           <div class="info-box mb-4">
             <i class="bi bi-map"></i>
-            <h3>Our Address</h3>
+            <h3>Address</h3>
             <p>
               Durban, South Africa
             </p>
           </div>
         </a>
 
-        <a href="mailto:datasideaofficial@gmail" class="col-lg-3 col-md-6">
+        <a href="mailto:professorjamada@gmail.com" class="col-lg-3 col-md-6">
           <div class="info-box mb-4">
             <i class="bi bi-envelope"></i>
             <h3>Email</h3>
@@ -315,7 +286,7 @@
           </div>
         </a>
 
-        <a href="tel:+256701520768" class="col-lg-3 col-md-6">
+        <a href="tel:+27783949018" class="col-lg-3 col-md-6">
           <div class="info-box mb-4">
             <i class="bi bi-phone"></i>
             <h3>Call</h3>
@@ -364,9 +335,9 @@
             </div>
             <div class="form-group mt-3">
               <!-- Field -->
-              {{form.subject}}
+              {{form.phone}}
               <!-- Field Error -->
-              <p class="text-danger">{{form.subject.error}}</p>
+              <p class="text-danger">{{form.phone.error}}</p>
             </div>
             <div class="form-group mt-3">
               <!-- Field -->

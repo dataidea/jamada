@@ -40,8 +40,8 @@
     <meta content="dataidea data idea uganda" name="keywords" />
 
     <!-- Favicons -->
-    <link href="{% static 'img/dataidea.png' %}" rel="icon" />
-    <link href="{% static 'img/dataidea.png' %}" rel="apple-touch-icon" />
+    <link href="{% static 'img/profile.jpeg' %}" rel="icon" />
+    <link href="{% static 'img/profile.jpeg' %}" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -107,6 +107,11 @@
               >
             </li>
             <li>
+              <a class="nav-link scrollto" href="{% url 'blog:blogs' %}"
+                >Blog</a
+              >
+            </li>
+            <li>
               <a class="nav-link scrollto" href="{% url 'index:home' %}#contact"
                 >Contact</a
               >
@@ -159,26 +164,13 @@
         <div class="copyright-wrap d-md-flex py-4">
           <div class="me-md-auto text-center text-md-start">
             <div class="copyright">
-              &copy; Copyright <strong><span>DataIdeaUg</span></strong
+              &copy; Copyright <strong><span>Professor Jamada</span></strong
               >. All Rights Reserved
             </div>
             <div class="credits">
               Designed by
               <a href="https://jumashafara.github.io">Juma Shafara</a>
             </div>
-          </div>
-          <div class="social-links text-center text-md-right pt-3 pt-md-0">
-            <a href="https://twitter.com/datas_idea" class="twitter"
-              ><i class="bi bi-twitter"></i
-            ></a>
-            <!--a
-                href=""
-                class="facebook"
-                ><i class="bi bi-youtube"></i
-              ></a -->
-            <a href="https://www.youtube.com/@dataideaug" class="youtube"
-              ><i class="bi bi-youtube"></i
-            ></a>
           </div>
         </div>
       </div>
@@ -202,40 +194,5 @@
 
     <!-- Template Main JS File -->
     <script src="{% static 'js/main.js' %}"></script>
-
-    <!-- Clip Board -->
-    <script>
-      // Initialize Clipboard.js for copy functionality
-      var clipboard = new ClipboardJS(".copy-button");
-
-      clipboard.on("success", function (e) {
-        e.clearSelection();
-        alert("Copied to clipboard!");
-      });
-
-      clipboard.on("error", function (e) {
-        console.error("Failed to copy: ", e);
-      });
-    </script>
-
-    <!--Google adSense-->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238"
-      crossorigin="anonymous"
-    ></script>
-    <!-- idea -->
-    <ins
-      class="adsbygoogle"
-      style="display: block"
-      data-ad-client="ca-pub-8076040302380238"
-      data-ad-slot="3365516080"
-      data-ad-format="auto"
-      data-full-width-responsive="true"
-    ></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    <!--End of Google AdSense-->
   </body>
 </html>
