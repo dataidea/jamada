@@ -9,39 +9,12 @@
     {% block title %}
     <title>Prof Jamada</title>
     {% endblock title%}
-    <!-- Google analytics tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-ZD84FCME05"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-ZD84FCME05");
-    </script>
-    <!-- End of Google Analytics tag -->
-
-    <!--Google Ads-->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8076040302380238"
-      crossorigin="anonymous"
-    ></script>
-    <meta
-      content="We provide quality software solutions and learning materials by laveraging the latest technologies"
-      name="description"
-    />
-    <!--End of Google Ads-->
 
     <meta content="dataidea data idea uganda" name="keywords" />
 
     <!-- Favicons -->
-    <link href="{% static 'img/profile.jpeg' %}" rel="icon" />
-    <link href="{% static 'img/profile.jpeg' %}" rel="apple-touch-icon" />
+    <link href="{% static 'img/profile3.jpg' %}" rel="icon" />
+    <link href="{% static 'img/profile3.jpg' %}" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -119,6 +92,9 @@
     </style>
     <!-- Floating Buttons -->
     <div class="floating-contacts">
+      <a href="mailto:professorjamada@gmail.com" class="phone"
+        ><i class="bi bi-envelope"></i
+      ></a>
       <a href="tel:+27783949018" class="phone"><i class="bi bi-phone"></i></a>
       <a href="https://wa.me/+27783949018" target="_blank" class="whatsapp"
         ><i class="bi bi-whatsapp"></i> +27783949018</a
@@ -190,11 +166,11 @@
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="{% url 'index:home' %}#about">About us</a>
+                  <a href="{% url 'index:home' %}#services">Services</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="{% url 'index:home' %}#services">Services</a>
+                  <a href="{% url 'blog:blogs' %}">Blog</a>
                 </li>
               </ul>
             </div>

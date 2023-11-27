@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import (render, redirect)
 from .forms import ContactForm
 from blog.models import Blog
 from services.models import Service
@@ -7,10 +7,11 @@ from services.models import Service
 def index(request):
     blogs = Blog.objects.all()
     services = Service.objects.all()
+    form = ContactForm()
     context = {
         'blogs': blogs,
         'services': services,
-        'form': ContactForm
+        'form': form
     }
     return render(request=request, template_name='index/index.html', context=context)
 
@@ -19,4 +20,8 @@ def contact(request):
     form = ContactForm(request.POST)
     if form.is_valid():
         form.save()
-    return render(request=request, template_name='index/index.html')
+    else:
+        context = {
+            'form': form
+        }
+    return redirect(to='/')

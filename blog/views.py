@@ -27,9 +27,6 @@ def search(request):
         Q(body__icontains=query)
     )
 
-     # Sort
-    sorted_blogs = sorted(blogs, key=lambda k: k.popularity, reverse=True)
-
-    context = {'blogs': sorted_blogs}
+    context = {'blogs': blogs}
     template_name = 'blog/blog.html'
     return render(request=request, template_name=template_name, context=context)
