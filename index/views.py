@@ -1,4 +1,5 @@
 from django.shortcuts import (render, redirect)
+from .models import DisplayPicture
 from .forms import ContactForm
 from blog.models import Blog
 from services.models import Service
@@ -7,11 +8,13 @@ from services.models import Service
 def index(request):
     blogs = Blog.objects.all()
     services = Service.objects.all()
+    display_picture = DisplayPicture.objects.all()[0]
     form = ContactForm()
     context = {
         'blogs': blogs,
         'services': services,
-        'form': form
+        'form': form,
+        'display_picture': display_picture,
     }
     return render(request=request, template_name='index/index.html', context=context)
 

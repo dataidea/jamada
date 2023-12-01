@@ -9,5 +9,11 @@ class Contact(models.Model):
     
     def __str__(self):
         return self.name
+    
+class DisplayPicture(models.Model):
+    image = models.ImageField(upload_to='images')
+    
+    def __str__(self):
+        return self.image.url
 
 
